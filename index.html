@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elizabeth Koleva — CV</title>
+<meta name="description" content="Elizabeth Velikova Koleva — Full-Stack AI Engineer. HPC Software Engineer at Discoverer and AI Engineer at BRAIN++, Sofia, Bulgaria.">
+<meta property="og:title" content="Elizabeth Velikova Koleva — Full-Stack AI Engineer">
+<meta property="og:description" content="HPC and AI engineering: turning deep tech into scalable business assets.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231d5c55'/><text x='50%' y='54%' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle' dominant-baseline='middle'>EK</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f2ee; --paper:#ffffff; --ink:#1c2321; --muted:#5f6b68; --rule:#d9dedc;
+  --accent:#1d5c55; --accent-soft:#e3efec; --shadow:0 1px 2px rgba(0,0,0,.04),0 8px 30px rgba(20,40,36,.08);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121615; --paper:#1a201f; --ink:#e7ecea; --muted:#9aa7a4; --rule:#2e3836;
+    --accent:#6cc3b4; --accent-soft:#1f3532; --shadow:0 8px 30px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121615; --paper:#1a201f; --ink:#e7ecea; --muted:#9aa7a4; --rule:#2e3836;
+  --accent:#6cc3b4; --accent-soft:#1f3532; --shadow:0 8px 30px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 "Spectral",Georgia,serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.sans{font-family:"IBM Plex Sans",system-ui,sans-serif}
+
+/* toolbar */
+.bar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.bar-in{max-width:900px;margin:0 auto;padding:10px 16px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.brand{font:600 15px "IBM Plex Sans",sans-serif;letter-spacing:.02em;margin-right:auto;color:var(--ink)}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;padding:2px;background:var(--paper)}
+.seg button{border:0;background:none;font:500 13px "IBM Plex Sans",sans-serif;color:var(--muted);padding:6px 12px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--paper)}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);
+  font:500 13px "IBM Plex Sans",sans-serif;padding:7px 12px;border-radius:999px;cursor:pointer;text-decoration:none}
+.btn:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.btn.primary:hover{filter:brightness(1.08);color:var(--paper)}
+.btn svg{width:15px;height:15px;flex:none}
+.dd{position:relative}
+.dd-menu{position:absolute;right:0;top:calc(100% + 6px);background:var(--paper);border:1px solid var(--rule);border-radius:12px;box-shadow:var(--shadow);
+  padding:6px;min-width:250px;display:none}
+.dd.open .dd-menu{display:block}
+.dd-menu a{display:block;padding:9px 12px;border-radius:8px;color:var(--ink);font:14px "IBM Plex Sans",sans-serif}
+.dd-menu a:hover{background:var(--accent-soft);text-decoration:none}
+.dd-menu small{display:block;color:var(--muted);font-size:12px}
+
+/* paper */
+main{max-width:900px;margin:24px auto 48px;padding:0 16px}
+.paper{background:var(--paper);border-radius:14px;box-shadow:var(--shadow);padding:48px 56px}
+header.hero{display:flex;gap:24px;align-items:center;border-bottom:3px solid var(--accent);padding-bottom:20px}
+.hero img{width:104px;height:104px;border-radius:50%;object-fit:cover;flex:none}
+h1{font:700 40px/1.1 "Spectral",serif;margin:0}
+.role{font:500 15px "IBM Plex Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:6px 0 8px}
+.contact{display:flex;flex-wrap:wrap;gap:4px 20px;font:14.5px "IBM Plex Sans",sans-serif;color:var(--muted)}
+.summary{margin:20px 0 0;text-align:justify;hyphens:auto}
+h2{font:600 14px "IBM Plex Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
+  border-bottom:1px solid var(--rule);padding-bottom:6px;margin:36px 0 14px}
+.row{display:grid;grid-template-columns:170px 1fr;gap:4px 24px;margin-bottom:18px}
+.when{font:14px/1.5 "IBM Plex Sans",sans-serif;color:var(--muted)}
+.what h3{font:600 17px "IBM Plex Sans",sans-serif;margin:0}
+.org{font-style:italic;color:var(--accent);margin:2px 0 6px}
+.tag{font:400 16px "IBM Plex Sans",sans-serif;color:var(--accent)}
+ul{margin:4px 0 0;padding-left:20px}
+li{margin:3px 0}
+.skills{display:grid;grid-template-columns:170px 1fr;gap:8px 24px}
+.skills dt{font:500 15px "IBM Plex Sans",sans-serif;color:var(--accent)}
+.skills dd{margin:0}
+.certs{display:grid;grid-template-columns:1fr 1fr;gap:12px 32px}
+.certs b,.lead b,.what b{font:600 15.5px "IBM Plex Sans",sans-serif}
+p{margin:0}
+
+/* pdf view */
+#pdfview{display:none}
+#pdfview object{width:100%;height:calc(100vh - 140px);min-height:520px;border:0;border-radius:14px;box-shadow:var(--shadow);background:var(--paper)}
+.fallback{padding:40px;text-align:center}
+body.show-pdf #pdfview{display:block}
+body.show-pdf #webview{display:none}
+
+footer{text-align:center;color:var(--muted);font:13px "IBM Plex Sans",sans-serif;margin-top:24px}
+
+/* QR dialog */
+dialog{border:0;border-radius:18px;padding:28px;background:var(--paper);color:var(--ink);box-shadow:var(--shadow);max-width:calc(100vw - 32px)}
+dialog::backdrop{background:rgba(10,20,18,.55)}
+.qr-wrap{background:#fff;padding:16px;border-radius:12px;display:inline-block}
+#qr img,#qr canvas{display:block;width:240px;height:240px}
+.qr-box{text-align:center}
+.qr-box h3{font:600 18px "IBM Plex Sans",sans-serif;margin:0 0 4px}
+.qr-box p{font:13px "IBM Plex Sans",sans-serif;color:var(--muted);margin:0 0 16px;word-break:break-all}
+.qr-actions{display:flex;gap:8px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+
+@media (max-width:700px){
+  body{font-size:16px}
+  .paper{padding:28px 20px;border-radius:12px}
+  header.hero{flex-direction:column;align-items:flex-start;gap:14px}
+  h1{font-size:30px}
+  .summary{text-align:left}
+  .row,.skills{grid-template-columns:1fr;gap:2px}
+  .skills dd{margin-bottom:8px}
+  .certs{grid-template-columns:1fr}
+  .brand{width:100%}
+  .btn .lbl-long{display:none}
+}
+@media print{
+  .bar,footer,dialog{display:none!important}
+  body{background:#fff;color:#000;font-size:11pt}
+  main{margin:0;max-width:none;padding:0}
+  .paper{box-shadow:none;padding:0}
+  #webview{display:block!important} #pdfview{display:none!important}
+  .row{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="bar-in">
+    <span class="brand">Elizabeth Koleva</span>
+    <div class="seg" role="group" aria-label="View">
+      <button id="vWeb" aria-pressed="true">Web</button>
+      <button id="vPdf" aria-pressed="false">PDF</button>
+    </div>
+    <div class="dd" id="dl">
+      <button class="btn primary" id="dlBtn" aria-haspopup="true" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+        Download<span class="lbl-long">&nbsp;CV</span>
+      </button>
+      <div class="dd-menu" role="menu">
+        <a href="cv/Koleva_Elizabeth_CV.pdf" download role="menuitem">CV (PDF, 2 pages)<small>Current one-page-style résumé</small></a>
+        <a href="cv/Koleva_Elizabeth_CV_extended.pdf" download role="menuitem">Extended CV (PDF, 3 pages)<small>Includes conferences, seminars &amp; volunteering</small></a>
+      </div>
+    </div>
+    <button class="btn" id="qrBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg>
+      QR<span class="lbl-long">&nbsp;code</span>
+    </button>
+    <button class="btn" id="printBtn" title="Print">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a1 1 0 01-1-1v-6a2 2 0 012-2h14a2 2 0 012 2v6a1 1 0 01-1 1h-2M6 14h12v7H6z"/></svg>
+      <span class="lbl-long">Print</span>
+    </button>
+  </div>
+</div>
+
+<main>
+  <article class="paper" id="webview">
+    <header class="hero">
+      <img src="assets/photo.jpg" alt="Portrait of Elizabeth Koleva">
+      <div>
+        <h1>Elizabeth Velikova Koleva</h1>
+        <div class="role">Full-Stack AI Engineer</div>
+        <div class="contact">
+          <span>Sofia, Bulgaria</span>
+          <a href="mailto:elizabeetvk@gmail.com">elizabeetvk@gmail.com</a>
+          <a href="https://www.linkedin.com/in/elizabethvk" target="_blank" rel="noopener">linkedin.com/in/elizabethvk</a>
+        </div>
+      </div>
+    </header>
+
+    <p class="summary">I bridge advanced computing and business strategy. As an HPC Software Engineer at Discoverer, Bulgaria’s petascale supercomputer, and an AI Engineer at BRAIN++, the national AI Factory, I build systems that move from research into real deployment, including a production knowledge-management platform delivered from scratch to pilot. With degrees in Computer Science and Business Economics, I assess both the technical architecture and the business case. My goal is turning “deep tech” into scalable business assets: AI and HPC solutions that create measurable value for organisations and strengthen the regional innovation ecosystem.</p>
+
+    <h2>Experience</h2>
+    <div class="row">
+      <div class="when">Apr 2026 – Present<br>Sofia, Bulgaria</div>
+      <div class="what">
+        <h3>AI Engineer - Agentic Workflow Management and Deployment</h3>
+        <div class="org">Bulgarian AI Factory BRAIN++ (EU Horizon / EuroHPC)</div>
+        <ul>
+          <li>Sole developer of the BRAIN++ KMP/CRM platform, taken from scratch to a working proof of concept ready for user onboarding - PostgreSQL data model, application logic, Google OAuth authentication, and issue triage across the platform</li>
+          <li>Own the pilot deployment end-to-end on VPN-only infrastructure: internal DNS records, TLS certificates via DNS-01 validation and an internal CA, and SMTP relay through Google Workspace</li>
+          <li>Design and implement agentic AI workflows in production, covering multi-agent orchestration, system integration, deployment pipelines, and operational monitoring</li>
+          <li>Built the organisation’s web platform and its automation: a custom events page, plugins for automated news ingestion and Google Sheets–driven publishing, contact form hardening with CAPTCHA, and a workflow syndicating site news to LinkedIn</li>
+          <li>Work AI-native day to day - Claude Code as primary development assistant, plus evaluation of alternatives (Codex, Kimi Code, OpenCode)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="when">Sep 2025 – Present<br>Sofia, Bulgaria</div>
+      <div class="what">
+        <h3>HPC Software Engineer</h3>
+        <div class="org">Discoverer Petascale Supercomputer</div>
+        <ul>
+          <li>Develop software supporting large-scale scientific and technical workflows on petascale infrastructure, with an emphasis on performance and reproducibility</li>
+          <li>Own technical documentation, reporting, and project deliverables for internal and external stakeholders</li>
+          <li>Present project progress, tooling, and system capabilities to technical and non-technical audiences</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="when">Apr 2024 – Aug 2025<br>Sofia, Bulgaria</div>
+      <div class="what">
+        <h3>Software Developer</h3>
+        <div class="org">European Software Institute (ESI)</div>
+        <ul>
+          <li>Built the RITHMS platform end-to-end, using knowledge graphs for data interconnectivity and semantic analysis across heterogeneous sources</li>
+          <li>Fine-tuned NLP models for Bulgarian sentiment analysis, addressing tokenisation and morphology challenges specific to Slavic languages</li>
+          <li>Led disinformation-prevention research and designed AI-driven detection and mitigation approaches, shipping them as usable tooling</li>
+          <li>Researched AI and cybersecurity threats, including secure web development practices and countermeasures against information manipulation</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="when">Sep 2022 – Oct 2025<br>Sofia, Bulgaria</div>
+      <div class="what">
+        <h3>Teaching Assistant and University Mentor</h3>
+        <div class="org">Sofia University St. Kliment Ohridski</div>
+        <ul>
+          <li>Taught Fundamentals of Computer Graphics and Programming with JavaScript and Three.js; wrote course materials and supported student projects hands-on</li>
+          <li>Mentored undergraduates on debugging, problem-solving, teamwork, and academic development</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Technical Skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt><dd>Python, C, C++, JavaScript, TypeScript, SQL, Bash</dd>
+      <dt>Backend &amp; Data</dt><dd>REST API design, PostgreSQL, knowledge graphs, vector databases (Chroma, Faiss, Milvus, Weaviate), Dask, Spark</dd>
+      <dt>AI Engineering</dt><dd>Agentic and multi-agent workflows, LangChain, LLM fine-tuning and serving (vLLM, Triton), RAG, prompt engineering, Claude Code and LLM-assisted development, explainable AI</dd>
+      <dt>Infrastructure</dt><dd>Docker, Linux, Git, CI/CD, Slurm, Prometheus and Grafana monitoring, MPI, OpenMP, CUDA</dd>
+      <dt>Frontend</dt><dd>React, Three.js, modern component patterns, utility-first CSS</dd>
+      <dt>Languages spoken</dt><dd>Bulgarian (native), English (fluent, IELTS 8.0), German (conversational), Spanish (basic)</dd>
+    </dl>
+
+    <h2>Selected Projects</h2>
+    <div class="row">
+      <div class="when">Sep 2025 – Jan 2026</div>
+      <div class="what">
+        <h3>Benchmarking AI Factories on the MeluXina supercomputer <span class="tag">- second place, EUMaster4HPC Student Challenge</span></h3>
+        <p>Built a unified, reproducible framework measuring end-to-end AI Factory performance: object and file storage, PostgreSQL, inference servers (vLLM, Triton), and vector databases (Chroma, Faiss, Milvus, Weaviate). Modular Python scenarios orchestrated with Slurm, containerised deployments, Dask and Spark load generators, and Prometheus/Grafana monitoring, producing throughput, latency, and scalability comparisons across the stack.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="when">Jan 2026 – Jul 2026</div>
+      <div class="what">
+        <h3>Predicting and Explaining Alzheimer's Disease Using UK Biobank <span class="tag">- MSc thesis, UPC</span></h3>
+        <p>A reproducible, HPC-supported machine learning pipeline over large-scale UK Biobank data, combining feature-selection methods and explainable AI into an auditable system for identifying and interpreting predictive signals. Supervised by Prof. Jordi Torres Viñals, Prof. Petia Radeva, and Prof. Petia Georgieva.</p>
+      </div>
+    </div>
+
+    <h2>Education</h2>
+    <div class="row"><div class="when">Sep 2024 – 2026</div><div class="what"><b>MSc in High Performance Computing</b> - Sofia University St. Kliment Ohridski &amp; Universitat Politècnica de Catalunya, double degree, EUMaster4HPC</div></div>
+    <div class="row"><div class="when">Sep 2024 – Jul 2025</div><div class="what"><b>MSc in Business Economics</b> - Sofia University St. Kliment Ohridski</div></div>
+    <div class="row"><div class="when">Oct 2020 – Jul 2024</div><div class="what"><b>BSc in Computer Science</b> - Sofia University St. Kliment Ohridski; second BSc in Informatics and IT Education, 2023–2024</div></div>
+
+    <h2>Honours and Awards</h2>
+    <div class="row"><div class="when">Jan 2026</div><div class="what"><b>Second Place, EUMaster4HPC Student Challenge 2025–2026</b> - Benchmarking AI Factories on MeluXina, Luxembourg</div></div>
+    <div class="row"><div class="when">Mar 2025</div><div class="what"><b>Winner, EuroHPC Summit Student Challenge 2025</b> - EuroHPC JU, Kraków</div></div>
+    <div class="row"><div class="when">Apr 2025</div><div class="what"><b>Most Innovative Business Solution, AmCham Bulgaria Hackathon 2025</b></div></div>
+
+    <h2>Certifications</h2>
+    <div class="certs">
+      <div><b>European Agentic AI Bootcamp</b> - OpenACC and NVIDIA, 2026</div>
+      <div><b>LLM Foundations &amp; Applications</b> - Northwestern Polytechnical University, 2026</div>
+      <div><b>GPU Programming: Foundations</b> - Forschungszentrum Jülich, 2026</div>
+      <div><b>Parallel Programming (MPI, OpenMP)</b> - HLRS Stuttgart, 2025</div>
+      <div><b>Kanban System Design</b> - Kanban University, 2025</div>
+      <div><b>Web Threats for Developers, Top 10 and Advanced</b> - ESI, 2024</div>
+    </div>
+
+    <h2>Leadership</h2>
+    <p class="lead"><b>HPC Student Ambassador Mentor</b>, EuroHPC JU · <b>Chairman of the Supervisory Board</b>, Sofia University Students Council · <b>Board Member</b>, Transform4Europe Student Council</p>
+  </article>
+
+  <section id="pdfview" aria-label="PDF preview">
+    <object data="cv/Koleva_Elizabeth_CV.pdf#view=FitH" type="application/pdf">
+      <div class="paper fallback">
+        <p>Your browser can’t show the PDF inline.</p>
+        <p style="margin-top:14px"><a class="btn primary" href="cv/Koleva_Elizabeth_CV.pdf" target="_blank" rel="noopener">Open the PDF</a></p>
+      </div>
+    </object>
+  </section>
+
+  <footer>© <span id="yr"></span> Elizabeth Velikova Koleva</footer>
+</main>
+
+<dialog id="qrDlg" aria-labelledby="qrTitle">
+  <div class="qr-box">
+    <h3 id="qrTitle">Scan to open this CV</h3>
+    <p id="qrUrl"></p>
+    <div class="qr-wrap"><div id="qr"></div></div>
+    <div class="qr-actions">
+      <button class="btn primary" id="qrSave">Download QR (PNG)</button>
+      <button class="btn" id="qrCopy">Copy link</button>
+      <button class="btn" id="qrClose">Close</button>
+    </div>
+  </div>
+</dialog>
+
+<script src="assets/qrcode.min.js"></script>
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  $('yr').textContent=new Date().getFullYear();
+
+  // view toggle (#pdf deep-link supported)
+  function setView(pdf){
+    document.body.classList.toggle('show-pdf',pdf);
+    $('vWeb').setAttribute('aria-pressed',!pdf);
+    $('vPdf').setAttribute('aria-pressed',pdf);
+    history.replaceState(null,'',pdf?'#pdf':location.pathname+location.search);
+  }
+  $('vWeb').onclick=function(){setView(false)};
+  $('vPdf').onclick=function(){setView(true)};
+  if(location.hash==='#pdf') setView(true);
+
+  // download dropdown
+  var dd=$('dl');
+  $('dlBtn').onclick=function(e){e.stopPropagation();var o=dd.classList.toggle('open');this.setAttribute('aria-expanded',o)};
+  document.addEventListener('click',function(){dd.classList.remove('open');$('dlBtn').setAttribute('aria-expanded',false)});
+
+  $('printBtn').onclick=function(){window.print()};
+
+  // QR code for this page's URL
+  var pageUrl=location.origin+location.pathname;
+  var made=false;
+  $('qrBtn').onclick=function(){
+    if(!made){
+      $('qrUrl').textContent=pageUrl;
+      new QRCode($('qr'),{text:pageUrl,width:480,height:480,colorDark:'#1d5c55',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});
+      made=true;
+    }
+    $('qrDlg').showModal();
+  };
+  $('qrClose').onclick=function(){$('qrDlg').close()};
+  $('qrDlg').addEventListener('click',function(e){if(e.target===this)this.close()});
+  $('qrSave').onclick=function(){
+    var c=$('qr').querySelector('canvas'); if(!c) return;
+    // add a white quiet zone around the code
+    var pad=48,out=document.createElement('canvas');
+    out.width=c.width+pad*2; out.height=c.height+pad*2;
+    var g=out.getContext('2d'); g.fillStyle='#fff'; g.fillRect(0,0,out.width,out.height); g.drawImage(c,pad,pad);
+    var a=document.createElement('a'); a.download='Elizabeth_Koleva_CV_QR.png'; a.href=out.toDataURL('image/png'); a.click();
+  };
+  $('qrCopy').onclick=function(){
+    var b=this;
+    (navigator.clipboard?navigator.clipboard.writeText(pageUrl):Promise.reject()).then(function(){b.textContent='Copied!'},function(){b.textContent=pageUrl})
+      .finally(function(){setTimeout(function(){b.textContent='Copy link'},1800)});
+  };
+})();
+</script>
+</body>
+</html>
