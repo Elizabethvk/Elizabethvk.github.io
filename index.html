@@ -76,8 +76,12 @@ li{margin:3px 0}
 .skills{display:grid;grid-template-columns:170px 1fr;gap:8px 24px}
 .skills dt{font:500 15px "IBM Plex Sans",sans-serif;color:var(--accent)}
 .skills dd{margin:0}
-.certs{display:grid;grid-template-columns:1fr 1fr;gap:12px 32px}
-.certs b,.lead b,.what b{font:600 15.5px "IBM Plex Sans",sans-serif}
+.cert-groups{display:grid;grid-template-columns:1fr 1fr;gap:18px 32px}
+.cert-groups h4{font:600 12.5px "IBM Plex Sans",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.cert-groups ul{list-style:none;padding:0;margin:0}
+.cert-groups li{margin:0 0 7px;padding-left:12px;border-left:2px solid var(--accent-soft)}
+.cert-groups b{font:600 15.5px "IBM Plex Sans",sans-serif}
+.lead b,.what b{font:600 15.5px "IBM Plex Sans",sans-serif}
 p{margin:0}
 
 /* pdf view */
@@ -107,7 +111,7 @@ dialog::backdrop{background:rgba(18,10,26,.55)}
   .summary{text-align:left}
   .row,.skills{grid-template-columns:1fr;gap:2px}
   .skills dd{margin-bottom:8px}
-  .certs{grid-template-columns:1fr}
+  .cert-groups{grid-template-columns:1fr}
   .brand{width:100%}
   .btn .lbl-long{display:none}
 }
@@ -269,15 +273,44 @@ dialog::backdrop{background:rgba(18,10,26,.55)}
     <div class="row"><div class="when">Apr 2025</div><div class="what"><b>Most Innovative Business Solution, AmCham Bulgaria Hackathon 2025</b> - American Chamber of Commerce in Bulgaria, Sofia</div></div>
     <div class="row"><div class="when">Mar 2025</div><div class="what"><b>Winner Team, EuroHPC Summit Student Challenge 2025</b> - EuroHPC JU, Kraków, Poland</div></div>
 
-    <h2>Certifications</h2>
-    <div class="certs">
-      <div><b>European Agentic AI Bootcamp</b> - OpenACC and NVIDIA, 2026</div>
-      <div><b>LLM Foundations &amp; Applications</b> - Northwestern Polytechnical University, 2026</div>
-      <div><b>GPU Programming: Foundations</b> - Forschungszentrum Jülich, 2026</div>
-      <div><b>Parallel Programming (MPI, OpenMP)</b> - HLRS Stuttgart, 2025</div>
-      <div><b>Kanban System Design</b> - Kanban University, 2025</div>
-      <div><b>Web Threats for Developers, Top 10 and Advanced</b> - ESI, 2024</div>
-      <div><b>IELTS Academic, Overall Band Score 8.0</b> - British Council, 2024</div>
+    <h2>Certifications and Training</h2>
+    <div class="cert-groups">
+      <section>
+        <h4>HPC &amp; Cloud</h4>
+        <ul>
+          <li><b>GPU Programming: Foundations</b> - Forschungszentrum Jülich, 2026</li>
+          <li><b>Parallel Programming (MPI, OpenMP, Advanced Topics)</b> - HLRS, University of Stuttgart, 2025</li>
+          <li><b>Containers &amp; Kubernetes Essentials</b></li>
+        </ul>
+      </section>
+      <section>
+        <h4>AI &amp; LLMs</h4>
+        <ul>
+          <li><b>European Agentic AI Bootcamp</b> - OpenACC and NVIDIA, 2026</li>
+          <li><b>LLM Foundations &amp; Applications</b> - Northwestern Polytechnical University, 2026</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Security</h4>
+        <ul>
+          <li><b>Cognitive Warfare Course</b> - Sofia, 2025</li>
+          <li><b>Web Threats for Developers, Top 10 and Advanced</b> - European Software Institute, 2024</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Business &amp; Product</h4>
+        <ul>
+          <li><b>Kanban System Design</b> - Kanban University, 2025</li>
+          <li><b>Digital Platform Enterprise</b> - DEMO Summer School</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Language</h4>
+        <ul>
+          <li><b>IELTS Academic, Overall Band Score 8.0</b> - British Council, 2024</li>
+          <li><b>Certificate in Advanced English (CAE)</b> - Cambridge University Press &amp; Assessment, 2019</li>
+        </ul>
+      </section>
     </div>
 
     <h2>Talks, Posters and Schools</h2>
@@ -291,6 +324,8 @@ dialog::backdrop{background:rgba(18,10,26,.55)}
     <div class="row"><div class="when">Sep 2023<br>Dubrovnik, Croatia</div><div class="what"><b>Student Poster Session</b> - Central European Conference on Information and Intelligent Systems (CECIIS) 2023</div></div>
 
     <h2>Leadership and Community</h2>
+    <div class="row"><div class="when">Oct 2026 – Present</div><div class="what"><b>Mentor, ABLE Mentor</b> - mentoring programme of the Association of Bulgarian Leaders and Entrepreneurs (ABLE), pairing high school students one-to-one with professionals to bring the student’s own idea to life over a season as a practical, business, social, or personal development project</div></div>
+    <div class="row"><div class="when">Sep 2026 – Present</div><div class="what"><b>Partnerships &amp; Operations Lead, NASA Space Apps Sofia</b> - science and technology volunteering for the Sofia edition of the NASA International Space Apps Challenge</div></div>
     <div class="row"><div class="when">Dec 2025 – Present</div><div class="what"><b>HPC Student Ambassador Mentor</b> - EuroHPC Joint Undertaking; mentoring the incoming ambassador cohort after serving as an HPC Student Ambassador (Dec 2024 – Mar 2025)</div></div>
     <div class="row"><div class="when">Apr 2025 – Present</div><div class="what"><b>Student Representative</b> - EUMaster4HPC information sessions, speaking to prospective students across Europe about entering the field</div></div>
     <div class="row"><div class="when">Oct 2023 – Aug 2025</div><div class="what"><b>Board Member, Transform4Europe Student Council</b> - European university alliance representing students across seven institutions</div></div>
